@@ -25,7 +25,7 @@ Navigate to the reddit account associated with the app. You should see the new p
 ## Built With
 
 * [POEMIST API](https://poemist.github.io/poemist-apidoc/) - POEMIST API to get random poems.
-* [PRAW] (https://praw.readthedocs.io/en/latest/getting_started/installation.html) - Python Reddit API Wrapper library
+* [PRAW](https://praw.readthedocs.io/en/latest/getting_started/installation.html) - Python Reddit API Wrapper library
 
 ## License
 This work is licensed under the [GNU General Public License v3.0] - see the [LICENSE](LICENSE) file for details.
