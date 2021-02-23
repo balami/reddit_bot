@@ -1,17 +1,7 @@
-from config import config
 import requests
 import praw
 
-params = config()
-
-# replace the user_agent key's value "poetrybot" by your own app's name, the one created on reddit.
-reddit = praw.Reddit(
-    client_id=params["client_id"],
-    client_secret=params["client_secret"],
-    user_agent="<console:poetrybot:1.0>",
-    username=params["username"],
-    password=params["password"]
-)
+reddit = praw.Reddit(site_name="default_bot", user_agent="<console:poetrybot:1.0>")
 
 
 def get_random_quotes():
