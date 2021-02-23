@@ -1,6 +1,7 @@
 # Reddit Bot
 
-A reddit bot that posts a random poem as a reply when someone mentions "random poem" in the submissions.
+A reddit bot that posts a random poem as a reply whenever someone mentions poem in the submissions.
+
 
 ## Getting Started
 
@@ -18,7 +19,7 @@ pip install -r requirements.txt
 ## Running the application
 
 ```
-python bot.py
+python reddit_bot.py
 ```
 
 Navigate to the reddit account associated with the app. You should see the new posts under the post history. It might take a while for the new post to show up on reddit.
