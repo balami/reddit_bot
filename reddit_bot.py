@@ -1,7 +1,7 @@
 import requests
 import praw
 
-reddit = praw.Reddit(site_name="default_bot", user_agent="<console:poetrybot:1.0>")
+reddit = praw.Reddit(site_name="default_bot", config_interpolation="basic")
 
 
 def get_random_quotes():
