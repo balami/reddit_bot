@@ -33,9 +33,8 @@ def post_reply(reddit):
             if fn_response.status_code == 200:
                 # reply to the submission
                 submission.reply((fn_response.json())[0]['content'])
-                # store the submission ID so that we don't reply again
+                # store the submission ID so that we don't reply again to the same submission
                 already_replied.append(submission.id)
-                # to the same submission.
 
 
 if __name__ == "__main__":
