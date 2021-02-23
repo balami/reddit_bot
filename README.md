@@ -1,13 +1,14 @@
 # Reddit Bot
 
-A reddit bot that posts a random poem as a reply whenever someone mentions "random poem" in the submissions.
+A reddit bot that posts a random poem as a reply when someone mentions "random poem" in the submissions.
 
 ## Getting Started
 
 ### Prerequisites
 
 Get credentials for a script-type OAuth application from Reddit ```<client_id and client_secret>``` of the app, ```<username, password>``` of the reddit account.
-Create a configuration file named ```credentials.ini``` with keys ```client_id, client_secret, username, password``` and put your own crededntials from above as the values.
+
+Create a PRAW INI file for storing app credentials. Give a site name and list the key value pairs for each: ```client_id, client_secret, username, password```.
 
 Now, set up a python virtual environment and then install the dependencies for the app in the venv.
 ```
