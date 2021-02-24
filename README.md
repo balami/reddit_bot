@@ -12,15 +12,16 @@ Get credentials for a script-type OAuth application from Reddit ```<client_id an
 Create a PRAW INI file for storing app credentials. Give a site name and list the key value pairs for each: ```client_id, client_secret, username, password```.
 Also add user_agent values for your bot app ```script:%(bot_name)s:v%(bot_version)s (by u/%(bot_author)s)```
 
-Now, set up a python virtual environment and then install the dependencies for the app in the venv.
+Install [Docker](https://www.docker.com/get-started) and run the following command.
 ```
-pip install -r requirements.txt
+docker-compose build
 ```
+After the image is built successfully, run the docker container.
 
 ## Running the application
 
 ```
-python reddit_bot.py
+docker-compose up
 ```
 
 Navigate to the reddit account associated with the app. You should see the new posts under the post history. It might take a while for the new post to show up on reddit.
@@ -29,6 +30,7 @@ Navigate to the reddit account associated with the app. You should see the new p
 
 * [POEMIST API](https://poemist.github.io/poemist-apidoc/) - POEMIST API to get random poems.
 * [PRAW](https://praw.readthedocs.io/en/latest/getting_started/installation.html) - Python Reddit API Wrapper library
+* [Docker](https://docs.docker.com/engine/install/ubuntu/) - Docker Engine on Ubuntu
 
 ## License
 This work is licensed under the [GNU General Public License v3.0] - see the [LICENSE](LICENSE) file for details.
